@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Реєстрація{% endblock %}
+{% block content %}
+<h2>Форма реєстрації</h2>
+<form method="POST">
+    Ім'я: <input type="text" name="name" required>
+    Email: <input type="email" name="email" required>
+    Повідомлення: <textarea name="message" required></textarea>
+    <input class="btn" type="submit" value="Відправити">
+</form>
+{% endblock %}
